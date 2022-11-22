@@ -10,11 +10,13 @@ package tek.sdet.framework.pages;
 		private RetailHomePage homePage;
 		private RetailSignInPage signInPage;
 		private RetailAccountPage accountpage;
+		private RetailOrderPage orderpage;
 
 		public POMFactory() {
 			this.homePage = new RetailHomePage();
 			this.signInPage = new RetailSignInPage();
 			this.accountpage = new RetailAccountPage();
+			this.orderpage = new RetailOrderPage();
 		}
 
 		public RetailHomePage homePage() {
@@ -29,6 +31,9 @@ package tek.sdet.framework.pages;
 		
 		public RetailAccountPage accountpage() {
 			return this.accountpage;
+		}
+		public RetailOrderPage orderpage() {
+			return this.orderpage;
 		}
 
 	}

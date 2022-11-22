@@ -22,7 +22,7 @@ public class SignInSteps extends CommonUtility {
 	
 	@When("User click on Sign in option") 
 	public void userClickOnSignInOption() {
-		click(factory.homePage().signIn);
+		click(factory.homePage().signin);
 		logger.info("user clicked on sign in option succefully");
 		slowDown();
 	}

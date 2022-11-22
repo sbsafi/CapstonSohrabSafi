@@ -15,14 +15,15 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id="nameInput")
 	public WebElement NameField;
 	
-	@FindBy(id="phoneNumberInput")
+	
+	@FindBy(id="personalPhoneInput")
 	public WebElement PhoneField;
 	
 	@FindBy(id="personalUpdateBtn")
 	public WebElement Updatebtn;
 	
-	@FindBy(id="accountLink")
-	public WebElement Account;
+	@FindBy(xpath="//div[text()=\"Personal Information Updated Successfully\"]")
+	public WebElement Message;
 	
 	@FindBy(id="previousPasswordInput")
 	public WebElement PrevPassInput;
@@ -36,11 +37,23 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id="credentialsSubmitBtn")
 	public WebElement ChangePassBtn;
 	
+	@FindBy(xpath="//div[text()=\"Password Updated Successfully\"]")
+	public WebElement PassUpdatedSuccessfully;
+	
+	
+	
+	
 	
 	
 	
 	@FindBy(xpath="//p[text()='Add a payment method']")
 	public WebElement AddaPaymentMethod;
+	
+	
+	
+	
+	
+	
 	
 	@FindBy(id="cardNumberInput")
 	public WebElement CardInput;
@@ -124,6 +137,8 @@ public class RetailAccountPage extends BaseSetup {
 	
 	@FindBy(xpath="//button[text()='Remove']")
 	public WebElement RemoveAddress;
+
+	public WebElement addPaymentBttn;
 	
 	
 	
