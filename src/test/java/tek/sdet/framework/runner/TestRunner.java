@@ -9,7 +9,7 @@ package tek.sdet.framework.runner;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			tags = "@Department",
+			tags = "@signInTest",
 			features = ("classpath:features"),
 			glue ="tek.sdet.framework",
 			dryRun = false,

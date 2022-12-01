@@ -59,14 +59,22 @@ public class HomeSteps extends CommonUtility {
 	            Assert.assertTrue(isElementDisplayed(factory.homePage().electronics));
 	            logger.info("user is on Electronics section");
 	            break;
+	            
 	        case "Computers":
 	            Assert.assertTrue(isElementDisplayed(factory.homePage().computer));
 	            logger.info("user is on Computers section");
 	            break;
+	            
+	        case "Smart Home":
+	            Assert.assertTrue(isElementDisplayed(factory.homePage().smarthome));
+	            logger.info("user is on Smart Home section");
+	            break;
+
 	        case "Sports":
 	            Assert.assertTrue(isElementDisplayed(factory.homePage().Sports));
 	            logger.info("user is on Sports section");
 	            break;
+	            
 	        case "Automotive":
 	            Assert.assertTrue(isElementDisplayed(factory.homePage().Automative));
 	            logger.info("user is on Automotive section");
@@ -99,6 +107,14 @@ public class HomeSteps extends CommonUtility {
 	            Assert.assertEquals(Networking, department.get(0).get(1));
 	            logger.info(Accessories + " options are present in department" + Networking);
 	            break;
+	        case "Smart Home":
+	            click(factory.homePage().smarthome);
+	            String SmartHomeLightning = getText(factory.homePage().smarthomelightning);
+	            String PlugsandOutlets = getText(factory.homePage().plugsandoutlets);
+	            Assert.assertEquals(SmartHomeLightning, department.get(0).get(0));
+	            Assert.assertEquals(PlugsandOutlets, department.get(0).get(1));
+	            logger.info(SmartHomeLightning + " options are present in department" + PlugsandOutlets);
+	            break;
 	        case "Sports":
 	            click(factory.homePage().Sports);
 	            String AthleticClothing = getText(factory.homePage().AthleticClothing);
@@ -124,7 +140,7 @@ public class HomeSteps extends CommonUtility {
 	  // Scenario: Verify User can add an item to cart
 	   
 	   
-	@When("User click on Sign in  option") 
+	@When("User click on Sign in  Option") 
 	public void userClickOnSignInOptionn() {
 		click(factory.homePage().signin);
 		logger.info("user clicked on sign in option succefully");
@@ -352,83 +368,4 @@ public class HomeSteps extends CommonUtility {
 	
 }
 	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-
-	
-	
-	
-	
-	
-	
-
 

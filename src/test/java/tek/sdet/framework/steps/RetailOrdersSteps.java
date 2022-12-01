@@ -61,7 +61,6 @@ public class RetailOrdersSteps extends CommonUtility {
 	//@CancelOrder
 	//  Scenario: Verify User can cancel the order
 	
-	
 	@And("User click on Cancel The Order button")
 	public void userClickOnCanceltheOrderButton() {
 		click(factory.orderpage().cancelbttn);
@@ -95,7 +94,6 @@ public class RetailOrdersSteps extends CommonUtility {
 	
 	// @ReturnOrder
 	//  Scenario: Verify User can Return the order
-	
 	
 	@And("User click on Return Items button")
 	public void userClickedonReturnItemsBttn() {
@@ -133,7 +131,6 @@ public class RetailOrdersSteps extends CommonUtility {
 	
 	
 	
-	
 	//@WrittingReview
 	//  Scenario: Verify User can write a review on order placed
 	
@@ -166,72 +163,6 @@ public class RetailOrdersSteps extends CommonUtility {
 		logger.info("A message diplayed Your Review Was Added Successfully");
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 
 }

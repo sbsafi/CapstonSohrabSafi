@@ -26,8 +26,6 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	// @updatePassword
 	//  Scenario: Verify User can update Profile Information
-	
-	
 	@And("User update Name {string} and Phone {string}")
 	public void userUpdateNameAndPhone (String name, String phone) {
 		
@@ -38,8 +36,7 @@ public class RetailAccountSteps extends CommonUtility{
 		clearTextUsingSendKeys(factory.accountpage().PhoneField);
 		sendText(factory.accountpage().PhoneField,phone);
 		logger.info("user entered name and phone successfully");
-		
-		
+			
 	}
 	
 	@And("User click on Update button")
@@ -88,9 +85,7 @@ public class RetailAccountSteps extends CommonUtility{
 	}
 	
 	// @payment
-	//  Scenario: Verify User can add a payment method
-	
-	
+	//  Scenario: Verify User can add a payment method	
 	@And("User click on Add a payment method link")
 	public void userClickOnAddAPaymentMethodLink () {
 		click(factory.accountpage().AddaPaymentMethod);
@@ -119,15 +114,16 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	@Then("a message should be displayed Payment Method added successfully")
 	public void aMsgShouldBeDisplayed() {
-		//Assert.assertTrue(isElementDisplayed(factory.accountpage().Account));
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountpage().PaymentMethodAddedSuccessfully));
 		logger.info("Payment Method added successfully");
+	}
+		
 	
+		
 		
 	//@updateCrad
 	//  Scenario: Verify User can edit Debit or Credit card	
-		
-		
-	}
 	@And("User select the payment Card")
 	public void userSelectedThePaymentCard() {
 		click(factory.accountpage().SelectedpaymentCard);
@@ -167,7 +163,8 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	@Then("a message should be displayed Payment Method updated Successfully")
 	public void aMessageShouldBeDisplayed() {
-		//Assert.assertTrue(isElementDisplayed(factory.accountpage().Account));
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountpage().PaymentMethodupdatedSuccessfully));
 		logger.info("Payment Method added successfully");
 	
 	}
@@ -175,7 +172,6 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	//@removeCard
 	//  Scenario: Verify User can remove Debit or Credit card
-	
 	
 	@And("User click on remove option of card section")
 	public void userClickOnRemoveCardfromList () {
@@ -187,7 +183,7 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	@Then("payment details should be removed")
 	public void paymentdetailsShouldBeRemoved () {
-	//	Assert.assertTrue(isElementDisplayed(factory.accountpage().Account));
+	//	Assert.assertTrue(isElementDisplayed(factory.accountpage().Account)); There is no msg to validate.
 		logger.info("Details removed successfully");
 	}
 	
@@ -227,6 +223,8 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	@Then("a message should be displayed Address Added Successfully")
 	public void aMessageShouldBeDisplayedonScreen() {
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountpage().AddressAddedSuccessfully));
 		logger.info("Address Added Successfully");
 		
 	}
@@ -276,7 +274,8 @@ public class RetailAccountSteps extends CommonUtility{
 	
 	@Then("a message should be displayed Address Updated Successfully")
 	public void aMsgShouldBeDisplayedOnTheScreeen() {
-	//	Assert.assertTrue(isElementDisplayed(factory.accountpage().Account));
+		slowDown();
+		Assert.assertTrue(isElementDisplayed(factory.accountpage().AddressUpdatedSuccessfully));
 		logger.info("Your New Address Updated");
 
 	}

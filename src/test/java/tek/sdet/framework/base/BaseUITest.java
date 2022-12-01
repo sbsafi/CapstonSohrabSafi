@@ -21,7 +21,8 @@ package tek.sdet.framework.base;
 				byte[] screenShot = takeScreenShotAsBytes();
 				scenario.attach(screenShot, "image/png", scenario.getName() + "scenario Failed");
 			}
-			// super.quitBrowser();
+			 slowDown();
+			 super.quitBrowser();
 		}
 		
 		

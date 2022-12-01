@@ -26,7 +26,7 @@ Feature: Retail Home Page
 
   @additem
   Scenario: Verify User can add an item to cart
-    When User click on Sign in Option
+    When User click on Sign in  Option
     And user enter email 'David@gmail.com' and password 'Usa$12345'
     And User click on Login button
     And User should be logged in into account
@@ -40,7 +40,7 @@ Feature: Retail Home Page
 
   @placeAnOrder
   Scenario: Verify User can place an order without Shipping address and payment Method on file
-    When User click on Sign in  option
+    When User click on Sign in  Option
     And User enter email 'David@gmail.com' and password 'Usa$12345'
     And User click on login button
     And User should be logged in into Account
@@ -61,7 +61,7 @@ Feature: Retail Home Page
     And User click Add a credit card or Debit Card for Payment method
     And User fill the Debit or credit card information
       | CardNumber       | NameOnCard | ExpirationMonth | ExpirationYear | SecurityCode |
-      | 4444826372819333 | Ekram      |              11 |           2024 |          546 |
+      | 4444776352819333 | Ekram      |              12 |           2025 |          546 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed Order Placed, Thanks

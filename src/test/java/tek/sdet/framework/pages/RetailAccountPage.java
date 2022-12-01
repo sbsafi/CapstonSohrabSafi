@@ -15,7 +15,6 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id="nameInput")
 	public WebElement NameField;
 	
-	
 	@FindBy(id="personalPhoneInput")
 	public WebElement PhoneField;
 	
@@ -41,19 +40,13 @@ public class RetailAccountPage extends BaseSetup {
 	public WebElement PassUpdatedSuccessfully;
 	
 	
+//----------------------------------------------------------------------------------------------	
 	
-	
-	
-	
+	//@payment
+	//  Scenario: Verify User can add a payment method
 	
 	@FindBy(xpath="//p[text()='Add a payment method']")
 	public WebElement AddaPaymentMethod;
-	
-	
-	
-	
-	
-	
 	
 	@FindBy(id="cardNumberInput")
 	public WebElement CardInput;
@@ -73,6 +66,13 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id="paymentSubmitBtn")
 	public WebElement AddYourCardbtn;
 	
+	@FindBy(xpath="//div[text()=\"Payment Method added sucessfully\"]")
+	public WebElement PaymentMethodAddedSuccessfully;
+	
+//----------------------------------------------------------------------------------------------------	
+	
+	//@updateCrad
+	//  Scenario: Verify User can edit Debit or Credit card
 	@FindBy(css="p.account__payment__sub-text")
 	public WebElement SelectedpaymentCard;
 	
@@ -91,6 +91,13 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(xpath="//button[text()='Update Your Card']")
 	public WebElement UpdateCardBtn;
 	
+	@FindBy(xpath="//div[text()=\"Payment Method updated Successfully\"]")
+	public WebElement PaymentMethodupdatedSuccessfully;
+	
+//----------------------------------------------------------------------------------------------------
+	
+	// @removeCard
+	//  Scenario: Verify User can remove Debit or Credit card
 	
 	@FindBy(xpath="//button[text()='remove']")
 	public WebElement Remove;
@@ -99,6 +106,9 @@ public class RetailAccountPage extends BaseSetup {
 	public WebElement AddAddress;
 	
 	
+//----------------------------------------------------------------------------------------------------	
+	//@addAddress
+	//  Scenario: Verify User can add an Address
 	@FindBy(id="countryDropdown")
 	public WebElement Country;
 	
@@ -126,50 +136,30 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id="addressBtn")
 	public WebElement Addaddress;
 	
+	@FindBy(xpath="//div[text()=\"Address Added Successfully\"]")
+	public WebElement AddressAddedSuccessfully;
 	
+//---------------------------------------------------------------------------------------------------
+	
+	// @EditAddress
+	//  Scenario: Verify User can edit an Address added on account
 	@FindBy(xpath="//button[text()='Edit']")
 	public WebElement EditAddress;
 	
 	@FindBy(id="addressBtn")
 	public WebElement UpdateYourAddress;
 	
+	@FindBy(xpath="//div[text()=\"Address Updated Successfully\"]")
+	public WebElement AddressUpdatedSuccessfully;
+	
+//---------------------------------------------------------------------------------------------------
 	
 	
+	//@removeOldAddress
+	//  Scenario: Verify User can remove Address from Account
 	@FindBy(xpath="//button[text()='Remove']")
 	public WebElement RemoveAddress;
 
 	public WebElement addPaymentBttn;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

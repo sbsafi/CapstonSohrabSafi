@@ -13,7 +13,9 @@ public class RetailOrderPage extends BaseSetup {
 
 }
 	 
-	 @FindBy(id="signinLink")
+	 //Background:
+	 
+	    @FindBy(id="signinLink")
 		public WebElement signIn;
 		
 		@FindBy(id="email")
@@ -31,6 +33,10 @@ public class RetailOrderPage extends BaseSetup {
 		@FindBy(xpath="//p[text()='Show Details']")
 		public WebElement showdetails;
 		
+//---------------------------------------------------------------------------------------------		
+		// @CancelOrder
+		//  Scenario: Verify User can cancel the order
+		
 		@FindBy(id="cancelBtn")
 		public WebElement cancelbttn;
 		
@@ -44,9 +50,10 @@ public class RetailOrderPage extends BaseSetup {
 		public WebElement yourOrderHasBeenCancelled;
 		
 		
+//----------------------------------------------------------------------------------------------		
 		
-		
-	//Verify User can Return the order	
+		// @ReturnOrder
+		//  Scenario: Verify User can Return the order
 		
 	    @FindBy(id="returnBtn")
 	    public WebElement returnbtn;
@@ -63,8 +70,11 @@ public class RetailOrderPage extends BaseSetup {
 	    @FindBy(xpath="//p[text()='Return was successfull']")
 	    public WebElement yourOrderReturn;
 
+//-----------------------------------------------------------------------------------------------
 	    
-	  //Verify User can write a review on order placed  
+	    //@WrittingReview
+	   // Scenario: Verify User can write a review on order placed
+	    
 	    @FindBy(id = "reviewBtn")
 	    public WebElement reviewBtn;
 	    
@@ -80,63 +90,7 @@ public class RetailOrderPage extends BaseSetup {
 	    @FindBy(xpath="//div[text()='Your review was added successfully']")
 	    public WebElement Msg;
 		
-		
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+ 
 }
 
 

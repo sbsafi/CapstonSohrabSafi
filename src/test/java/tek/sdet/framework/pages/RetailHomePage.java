@@ -59,6 +59,12 @@ public class RetailHomePage extends BaseSetup {
 	    @FindBy(xpath="//span[text()='Networking']")
 	    public WebElement Networking;
 	    
+	    @FindBy(xpath="//span[text()='Smart Home Lightning']")
+	    public WebElement smarthomelightning;
+	    
+	    @FindBy(xpath="//span[text()='Plugs and Outlets']")
+	    public WebElement plugsandoutlets;
+	    
 	    @FindBy(xpath="//span[text()='Athletic Clothing']")
 	    public WebElement AthleticClothing;
 	    
@@ -175,30 +181,5 @@ public class RetailHomePage extends BaseSetup {
 	    @FindBy(xpath="//p[text()='Apex Legends - 1,000 Apex Coins']")
 	    public WebElement Apex;
 	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	
-	
-
-
 }
